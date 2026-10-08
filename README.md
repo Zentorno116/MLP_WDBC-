@@ -12,7 +12,6 @@
 * `data_split.py` — разделение данных на обучающую (`train.csv`) и валидационную (`val.csv`) выборки со стратификацией и сидом `seed=321`.
 * `train.py` — обучение нейросети, расчет потерь на каждой эпохе, сохранение весов в `saved_model.npy` и кривых обучения в `learning_curves.png`.
 * `evaluate.py` — загрузка весов, нормализация данных, расчет Binary Cross-Entropy и метрик качества (Accuracy, Precision, Recall, F1, Confusion Matrix).
-* `split.py`, `predict.py`, `mlp.py` — алиасы для совместимости с интерфейсом из ТЗ.
 * `report.pdf` / `report.tex` — подробный отчет со всеми математическими выкладками и листингами программ.
 
 ## Инструкция по запуску
@@ -30,10 +29,6 @@ python train.py --layer 24 24 --epochs 84 --batch_size 8 --learning_rate 0.0314
 ### 3. Оценка качества и прогнозирование
 ```bash
 python evaluate.py val.csv
-```
-или по имени из ТЗ:
-```bash
-python predict.py val.csv
 ```
 
 ## Итоговые результаты на валидации
