@@ -1,3 +1,11 @@
 __pycache__/
 *.pyc
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+sources/*.pdf
 sources/example.tex
+data_training.csv
+data_validation.csv
